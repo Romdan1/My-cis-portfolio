@@ -1,121 +1,254 @@
-/* Base Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Global Reset and Base Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f4;
     color: #333;
+    line-height: 1.6;
   }
   
+  /* Container */
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
   }
   
-  /* Header */
+  /* Header / Navigation */
   header {
-    background-color: #004d7a;
-    color: #fff;
-    padding: 1.5rem 2rem;
+    background-color: #8B0000; /* dark red */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+  }
+  
+  .nav-center {
+    flex-grow: 1;
     text-align: center;
   }
   
-  header h1 {
-    margin: 0;
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: gold;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  .linkedin-btn {
+    background-color: gold;
+    color: #8B0000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .linkedin-btn:hover {
+    background-color: #ffd700;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(to right, #8B0000, #b22222);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid gold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text h1 {
     font-size: 2.5rem;
   }
   
-  /* Navigation */
-  nav {
-    background-color: #00395d;
-    padding: 0.5rem 2rem;
-    display: flex;
-    justify-content: center;
+  .highlight {
+    color: gold;
   }
   
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  .typing-container {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
   
-  nav a:hover {
-    color: #f0c040;
+  .cursor {
+    display: inline-block;
+    color: gold;
+    animation: blink 0.7s steps(1) infinite;
   }
   
-  /* Main Content */
-  main {
-    padding: 3rem 2rem;
-    background-color: #fff;
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
   
-  /* Sections */
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  section h2 {
+  /* Section Headings */
+  h2 {
     font-size: 2rem;
-    color: #004d7a;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    color: #8B0000;
+    margin-bottom: 20px;
   }
   
-  section p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
+  /* Skills */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
-  /* Modal Section */
-  .modal-section {
-    background-color: #e8f4fb;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin-top: 2rem;
+  .skill-card {
+    background-color: gold;
+    color: #8B0000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .modal-section h3 {
-    color: #00395d;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  /* Projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
   
-  .modal-section p {
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  .project-card {
+    background-color: #fff;
+    border: 2px solid #8B0000;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .project-card h3 {
+    color: #8B0000;
+    margin-bottom: 10px;
+  }
+  
+  .project-card .btn {
+    display: inline-block;
+    background-color: #8B0000;
+    color: gold;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .project-card .btn:hover {
+    background-color: #a40000;
+  }
+  
+  /* Resume Section */
+  #resume embed {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+  }
+  
+  /* Contact */
+  #contact a {
+    color: #8B0000;
+    text-decoration: underline;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #8B0000;
+    color: gold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #a40000;
   }
   
   /* Footer */
   footer {
-    background-color: #00395d;
-    color: #fff;
+    background-color: #8B0000;
+    color: gold;
     text-align: center;
-    padding: 1.5rem 2rem;
-    margin-top: 4rem;
-    font-size: 0.9rem;
+    padding: 20px;
   }
   
-  /* Responsive */
+  /* Back-to-top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8B0000;
+    color: gold;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .back-to-top:hover {
+    background-color: #a40000;
+  }
+  
+  /* Responsive Adjustments */
   @media (max-width: 768px) {
-    nav {
+    .nav-links {
       flex-direction: column;
-      align-items: center;
+      gap: 1rem;
     }
   
-    nav a {
-      margin: 0.5rem 0;
-    }
-  
-    main {
-      padding: 2rem 1rem;
+    .projects-grid {
+      grid-template-columns: 1fr;
     }
   }
+  
   
