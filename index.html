@@ -3,157 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Academic Journey - My Coursework Portfolio</title>
+  <title>Romdan Mohamed - CIS Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="#hero" class="logo">Romdan Mohamed</a>
+      <div class="nav-center">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certifications">Certifications</a></li> <!-- ✅ New link -->
+          </ul>
+          
+      </div>
+      <a href="https://linkedin.com/in/romdan-mohamed-591213285" target="_blank" class="linkedin-btn">LinkedIn</a>
+    </nav>
+  </header>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="#" class="logo">Portfolio<span>.</span></a>
-    <button class="mobile-toggle" id="mobileToggle">☰</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#coursework">Coursework</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>My Academic <span class="highlight">Journey</span></h1>
-      <p>Welcome to my portfolio showcasing the coursework, projects, and skills I've developed throughout my college education.</p>
-      <a href="#coursework" class="btn">View My Work</a>
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <img src="profile.png" alt="Romdan Mohamed" class="profile-pic" />
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Romdan Mohamed</span></h1>
+          <p>Cybersecurity Student & IT Professional</p>
+          <div class="typing-container">
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="hero-image">
-      <div class="geometric-shape"><div class="shape"></div></div>
-    </div>
-    <div class="scroll-indicator"><span></span><p>Scroll Down</p></div>
   </section>
 
-  <!-- Coursework Section -->
-  <section id="coursework">
-    <div class="section-title"><h2>My Coursework</h2></div>
-    <div class="semester-nav">
-      <button class="semester-btn active" data-semester="all">All Courses</button>
-      <button class="semester-btn" data-semester="semester1">Semester 1</button>
-      <button class="semester-btn" data-semester="semester2">Semester 2</button>
-      <button class="semester-btn" data-semester="semester3">Semester 3</button>
-      <button class="semester-btn" data-semester="semester4">Semester 4</button>
-    </div>
-    <div class="courses-grid" id="coursesGrid"></div>
-  </section>
-
-  <!-- About Section -->
   <section id="about">
-    <div class="about-section">
-      <div class="about-content">
-        <h2>About My Academic Path</h2>
-        <p>I am a passionate student at [Your University Name], pursuing a degree in [Your Major]. My academic journey has been focused on developing both theoretical knowledge and practical skills that prepare me for my future career.</p>
-        <p>Throughout my college education, I've had the opportunity to work on diverse projects, collaborate with talented peers, and learn from expert professors in the field.</p>
-        <div class="stats">
-          <div class="stat-item"><div class="stat-number" id="courseCount">0</div><div class="stat-label">Courses Completed</div></div>
-          <div class="stat-item"><div class="stat-number" id="projectCount">0</div><div class="stat-label">Projects Completed</div></div>
-          <div class="stat-item"><div class="stat-number">3.8</div><div class="stat-label">GPA</div></div>
-        </div>
-      </div>
-      <div class="about-image"><img src="/api/placeholder/600/400" alt="Student Working" /></div>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m Romdan Mohamed, a senior at the University of Louisville majoring in Computer Information Systems with a double concentration in Cybersecurity and Business Process Management. I'm passionate about protecting information, improving digital processes, and designing secure systems that support business efficiency. 
+
+      I recently interned with Excel Business Solutions, where I gained experience working with clients and solving real-world IT problems. I’m still shaping the path I want to take, but I know I want to work at the intersection of technology, security, and impact. I’m always ready to learn, grow, and contribute wherever I can make a difference.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">CompTIA Security+</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">C#</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Microsoft Excel</div>
+        <div class="skill-card">Microsoft Word</div>
+        <div class="skill-card">Database Design</div>
+        <div class="skill-card">Process Improvement</div>
+        <div class="skill-card">System Analysis</div>
+        <div class="skill-card">Business Analysis</div>
+        <div class="skill-card">Project Management</div>
+        <div class="skill-card">Cryptography</div>
+        <div class="skill-card">Linux Labs</div>
+        <div class="skill-card">Threat Management</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+  
+        <!-- C# Programming Projects -->
+        <div class="project-card">
+          <h3>C# Programming Projects</h3>
+          <p>This repository showcases my sophomore-year projects using C#. It includes fundamentals like syntax, loops, conditionals, and functions. One highlight was building a calculator app, which strengthened my understanding of logic and control flow.</p>
+          <a href="https://github.com/Romdan1/CIS-199-C-/tree/main" target="_blank" class="btn">View on GitHub</a>
+        
+          <!-- SQL & ERD Projects -->
+<div class="project-card">
+    <h3>SQL & ERD Projects</h3>
+    <p>This repository includes coursework from my CIS 310 SQL class. It highlights my experience designing ERDs, creating and managing relational databases, and writing SQL queries to retrieve, update, and manipulate data.</p>
+    <a href="https://github.com/Romdan1/CIS-310-SQL/tree/main" target="_blank" class="btn">View on GitHub</a>
+  </div>
+<!-- Systems Analysis and Design Projects -->
+<div class="project-card">
+    <h3>Systems Analysis & Design Projects</h3>
+    <p>This repository features coursework from my CIS 320 class, where I applied structured analysis and design techniques using diagrams like use cases, class diagrams, prototypes, and more to model real-world information systems.</p>
+    <a href="https://github.com/Romdan1/CIS-320-/tree/main" target="_blank" class="btn">View on GitHub</a>
+  </div>
+<!-- MIS & Infrastructure Technologies Projects -->
+<div class="project-card">
+    <h3>MIS & Infrastructure Technologies</h3>
+    <p>This repository includes coursework from MIS and Infrastructure Technologies. It features strategic case studies on IT-driven business solutions and hands-on labs using Windows command-line, scripting, file management, and system documentation techniques.</p>
+    <a href="https://github.com/Romdan1/CIS-350-AND-410" target="_blank" class="btn">View on GitHub</a>
+  </div>
+<!-- Network Security & Database Security Projects -->
+<div class="project-card">
+    <h3>Network & Database Security Projects</h3>
+    <p>This collection features hands-on labs in firewall configuration using iptables, traffic analysis with Wireshark, SQL vulnerability testing, and Windows auditing with PowerShell. These projects built practical skills in identifying and mitigating security risks.</p>
+    <a href="https://github.com/Romdan1/CIS-480-AND-483/tree/main" target="_blank" class="btn">View on GitHub</a>
+  </div>
+<!-- Introduction to Information Security Labs -->
+<div class="project-card">
+    <h3>Information Security Labs & Identity Theft Project</h3>
+    <p>This repo contains labs from my Intro to InfoSec course. It covers Linux CLI, ARP/TCP/IP basics, comparing Telnet vs SSH, and a public-facing project on identity theft awareness. These exercises built a strong foundation in system and network security.</p>
+    <a href="https://github.com/Romdan1/CIS-484-IFNOSEC" target="_blank" class="btn">View on GitHub</a>
+  </div>
+<!-- GuidebookPro Website -->
+<div class="project-card">
+    <h3>GuidebookPro Website</h3>
+    <p>I designed and launched this site using Wix for GuidebookCo’s Pro division, aimed at helping fishing guides manage bookings, communication, and promotion. This project reflects my full-stack web design skills and focus on user experience.</p>
+    <a href="https://adamahamed201808.wixsite.com/guidebookpro" target="_blank" class="btn">View Live Site</a>
+  </div>
+            
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
   <section id="contact">
-    <div class="section-title"><h2>Get In Touch</h2></div>
-    <div class="contact-form">
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out if you'd like to connect!</p>
+      <p>Email: <a href="mailto:adamahamed201808@gmail.com">adamahamed201808@gmail.com</a></p>
+      <p>Phone: <a href="tel:5023453385">(502) 345-3385</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-top">
-      <div class="footer-column">
-        <a href="#" class="footer-logo">Portfolio<span>.</span></a>
-        <p class="footer-about">A showcase of my academic journey, coursework, and projects throughout my college education.</p>
-        <div class="social-links">
-          <a href="#" class="social-link">FB</a>
-          <a href="#" class="social-link">TW</a>
-          <a href="#" class="social-link">IG</a>
-          <a href="#" class="social-link">LI</a>
-        </div>
-      </div>
-      <div class="footer-column">
-        <h3 class="footer-title">Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#coursework">Coursework</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3 class="footer-title">Contact Info</h3>
-        <ul class="contact-info">
-          <li><span class="contact-icon">📍</span> 123 University Ave, City</li>
-          <li><span class="contact-icon">📞</span> (123) 456-7890</li>
-          <li><span class="contact-icon">✉️</span> your.email@university.edu</li>
-        </ul>
-      </div>
+  <section id="resume">
+    <div class="container">
+      <h2>My Resume</h2>
+      <p>You can view or download my resume below.</p>
+      <embed src="Romdan_Mohamed_Resume.pdf" type="application/pdf" width="100%" height="600px" />
+      <br /><br />
+      <a href="Romdan_Mohamed_Resume.pdf" class="btn" download>Download My Resume (PDF)</a>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Your Name | All Rights Reserved</p>
+  </section> <!-- ✅ properly closing resume section -->
+  
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <p>Here's a look at my current certification:</p>
+      
+      <embed src="CompTIA Security+ ce certificate .pdf" type="application/pdf" width="100%" height="600px" />
+  
+      <br /><br />
+      <a href="CompTIA Security+ ce certificate .pdf" class="btn/a>
+    </div>
+  </section>
+  
+      
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Romdan Mohamed - CIS Portfolio</p>
     </div>
   </footer>
 
-  <!-- Course Modal -->
-  <div class="modal" id="courseModal">
-    <div class="modal-content">
-      <button class="close-modal" id="closeModal">&times;</button>
-      <div class="modal-header">
-        <h2 class="modal-title" id="modalTitle">Course Title</h2>
-        <div class="modal-subtitle">
-          <span class="modal-tag" id="modalCode">CS101</span>
-          <span class="modal-tag" id="modalSemester">Semester 1</span>
-          <span class="modal-tag" id="modalGrade">Grade: A</span>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div class="modal-section">
-          <h3>Course Description</h3>
-          <p id="modalDescription">Course description will go here.</p>
-        </div>
-        <div class="modal-section">
-          <h3>Key Learnings</h3>
-          <div class="skill-list" id="modalSkills"></div>
-        </div>
-        <div class="modal-section">
-          <h3>Projects</h3>
-          <div class="project-gallery" id="modalProjects"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script src="script.js"></script>
+  <button id="back-to-top" class="back-to-top" title="Back to Top">↑</button>
 </body>
 </html>
+
+
