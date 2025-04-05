@@ -195,9 +195,26 @@
   }
   
   /* Contact */
+  #contact {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #contact p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
   #contact a {
+    display: inline-block;
+    margin: 10px 0;
     color: #8B0000;
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #contact .btn {
+    margin-top: 20px;
   }
   
   .btn {
